@@ -1,0 +1,9 @@
+test:
+    override:
+    - mocha
+
+deployment:
+    dockerhub:
+        branch:master
+        commands:
+        - $DOCKERHUB_BUILDTRIGGER_REQUEST
