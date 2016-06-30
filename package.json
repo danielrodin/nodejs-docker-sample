@@ -1,7 +1,7 @@
 {
   "name": "hello-world",
   "version": "1.0.0",
-  "description": "First test with node JS on Azure",
+  "description": "Test with node.js on Docker",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gnschenker/azure-nodejs.git"
+    "url": "git+https://github.com/danielrodin/nodejs-docker-sample.git"
   },
   "keywords": [
     "node",
     "JS",
-    "Azure"
+    "Docker"
   ],
-  "author": "Gabriel N. Schenker",
+  "author": "Daniel Rodin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gnschenker/azure-nodejs/issues"
+    "url": "https://github.com/danielrodin/nodejs-docker-sample/issues"
   },
-  "homepage": "https://github.com/gnschenker/azure-nodejs#readme",
+  "homepage": "https://github.com/danielrodin/nodejs-docker-sample#readme",
   "dependencies": {
     "express": "^4.13.4",
     "moment": "^2.11.2"
