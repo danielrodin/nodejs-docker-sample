@@ -4,6 +4,6 @@ test:
 
 deployment:
     dockerhub:
-        branch:master
+        branch: master
         commands:
         - $DOCKERHUB_BUILDTRIGGER_REQUEST
