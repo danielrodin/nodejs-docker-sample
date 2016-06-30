@@ -1,5 +1,5 @@
 {
-  "name": "hello-world",
+  "name": "nodejs-docker-sample",
   "version": "1.0.0",
   "description": "Test with node.js on Docker",
   "main": "server.js",
