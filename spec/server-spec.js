@@ -1,25 +1,21 @@
 
 var request = require("request");
 var server = require("../server.js");
+var assert = require('chai').assert;
 var base_url = "http://localhost:5000/";
 
-describe("when testing projects root endpoint", function(){
-    it("should return status OK", function(done){
-        request.get(base_url, function(error, response, body) {
-            expect(response.statusCode).toBe(200);
-            done();
+describe('Root endpoint', function() {
+    describe('when requesting', function() {
+        it('it should return OK (200)', function () {
+            request.get(base_url, function(error, response, body) {
+                assert.equal(200, response.statusCode);
+            });
+        });
+        it('it should contain Hello world', function () {
+            request.get(base_url, function(error, response, body) {
+                var isMatch = response.body.indexOf("Hello world") > -1;
+                assert.equal(true, false);
+            });
         });
     });
-    it("should return Hello world", function(done){
-        request.get(base_url, function(error, response, body) {
-            var isMatch = response.body.indexOf("Hello world") > -1;
-            expect(isMatch).toBe(true);
-            done();
-        })
-    });
-    
-    // clean up... shutting down the server
-    it('should clean up', function(){
-        server.stop();
-    })
-})
+});
