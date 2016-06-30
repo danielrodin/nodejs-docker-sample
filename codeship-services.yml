@@ -1,4 +1,0 @@
-app:
-  build:
-    image: vkmedia/mobileweb
-    dockerfile_path: Dockerfile

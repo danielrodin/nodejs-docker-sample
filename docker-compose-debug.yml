@@ -1,0 +1,7 @@
+
+sut:
+  build: .
+  ports:
+    - "5000:5000"
+    - "5858:5858"
+  entrypoint: node --debug=5858 server.js
