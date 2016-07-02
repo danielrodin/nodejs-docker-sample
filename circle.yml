@@ -1,5 +1,15 @@
+machine:
+    service:
+     - docker
+
+dependencies:
+  override:
+    - docker info
+    - docker build -t danielrodin/nodejs-docker-sample .
+
 deployment:
     dockerhub:
         branch: master
         commands:
-        - $DOCKERHUB_BUILDTRIGGER_REQUEST
+            - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+            - docker push circleci/elasticsearch
