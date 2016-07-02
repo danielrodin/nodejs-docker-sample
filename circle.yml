@@ -1,7 +1,3 @@
-machine:
-    service:
-     - docker
-
 dependencies:
   override:
     - docker info
