@@ -1,6 +1,6 @@
 FROM node:argon
 # for testing purposes
-RUN npm install -g jasmine-node
+RUN npm install -g mocha
 RUN mkdir /app
 WORKDIR /app
 COPY package.json /app/
